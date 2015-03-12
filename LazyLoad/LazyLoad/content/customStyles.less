@@ -1,0 +1,52 @@
+﻿body {
+    padding-top: 60px;
+}
+
+html, body {
+    height: 98%;
+}
+
+.special {
+    min-height: 95%;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+    filter: Alpha(Opacity=90);
+}
+
+.animate-show {
+    overflow: hidden !important; 
+    margin: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fullsize {
+    height: 100%;
+    width: 100%;
+}
+
+.transition-fade {
+    position: relative;
+    opacity: 1;
+}
+
+.transition-fade.ng-enter {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    opacity: 0;
+}
+
+.transition-fade.ng-enter-active {
+    opacity: 1;
+}
+
+.transition-fade.ng-leave-active {
+    opacity: 0;
+}

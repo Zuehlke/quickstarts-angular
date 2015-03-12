@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lazy Load</title>
+    <link rel='stylesheet' href='/content/stylesBundle.css'>
+    <script src='/scripts/ScriptBundle.js'></script>
+    <script language="javascript" src="/app/ApBundle.js"></script>
+</head>
+<body>
+    <div id="myid" ng-app="app">
+        <div data-ng-include="'app/layout/navigation.html'"></div>
+        <div class="row fullsize">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 fullsize">
+                <div class="jumbotron special">
+                    <div ui-view class="transition-fade"></div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

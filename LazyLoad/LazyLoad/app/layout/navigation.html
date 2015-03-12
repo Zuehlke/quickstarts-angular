@@ -1,0 +1,13 @@
+﻿<div data-ng-controller="Navigation">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-header" style="width: 100%">
+            <a class="navbar-brand" ui-sref="home">Lazy Load</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ng-repeat="menu in menuItems | orderBy:'order'"><a ui-sref={{menu.state}}>{{menu.name}}</a></li>
+        </ul>
+        <div class="nav navbar-nav navbar-right" style="margin-right: 10px" >
+            <a class="navbar-brand" ui-sref="shop">Shop</a>
+        </div>
+    </nav>
+</div>

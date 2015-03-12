@@ -1,0 +1,39 @@
+﻿<div class="container">
+    <div class="row col-lg-12">
+        <p>
+            <h2>Handling modules with Angular and ocLazyload</h2>
+        </p>
+        <p>This sample demonstrates how to lazy load controllers or modules in angular.</p>
+        <ul>
+            <li>
+                <div>
+                    <p>Used technologies:</p>
+                    <p>
+                        <ul>
+                            <li>Angular</li>
+                            <li>ocLazyload</li>
+                            <li>Angular Ui Route</li>
+                            <li>LocalStorageModule</li>
+                        </ul>
+                    </p>
+                    <p>The shop controller is loaded when the ui-router navigates to the shop page.</p>
+                    <p>
+                        <ul>
+                            <li>The ui-router is configured to resolve a promise when the shop state is set.</li>
+                            <li>The ocLazyload is configured to load the file with the browser integrated script loader</li>
+                        </ul>
+                    </p>
+                    <p>The radiator module is loaded after the buy button is clicked.</p>
+                    <p>
+                        <ul>
+                            <li>The radiator module adds a new entry to the nav-bar.</li>
+                            <li>The radiator module adds a new state to the ui-router.</li>
+                            <li>The page is reloaded if the module gets uninstalled.</li>
+                        </ul>
+                    </p>
+                    <p>The installed items are stored in the local storage of the browser.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

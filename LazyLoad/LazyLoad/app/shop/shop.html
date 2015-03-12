@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <div class="row col-lg-12">
+        <p><h1>Shop</h1></p>
+        <table st-table="rowCollection" class="table">
+            <tbody>
+                <tr st-select-row="row" ng-repeat="row in rowCollection">
+                    <td>{{row.name}}{{row.installed}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row col-lg-12">
+        <button class="col-lg-1" data-ng-click="onBuy()" data-ng-disabled="buyDisabled">Buy</button>
+        <div class="col-lg-1"></div>
+        <button class="col-lg-1" data-ng-click="onDelete()" data-ng-disabled="deleteDisabled">Unlinstall</button>
+    </div>
+</div>
