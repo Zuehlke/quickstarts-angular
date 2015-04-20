@@ -1,0 +1,16 @@
+*.sw*
+*~
+build/
+bin/
+node_modules/
+vendor/
+Frontend/**/*.js
+Frontend/**/*.map
+Frontend/**/*.css
+!Frontend/specs/*
+/.tscache/default
+/obj
+/packages
+*.DotSettings
+/test-results.xml
+/StromBay.Data/obj/Debug
